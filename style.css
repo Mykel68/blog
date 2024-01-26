@@ -1,0 +1,35 @@
+.right{
+    padding: 20px 30px;
+}
+.inbox{
+    width: 400px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    
+}
+.post-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: wheat;
+    min-width: 350px;
+    margin: 10px;
+}
+.post-image-container{
+    display: flex;
+    flex-direction: column;
+}
+.post-container img{
+    max-width: 100px;
+    height: 100px;
+}
+p .post-intro{
+    background-color: black !important;
+}
