@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require('config.php');
 
 // Get post ID from the URL
@@ -24,7 +25,8 @@ if (isset($_GET['id'])) {
         echo '<div class="row">';
 
         // Image path without timestamp
-        $imagePath = 'uploads/' . $row['image'];
+        $image = preg_replace("/\.[0-9]{10,}$/", "", $row['image']);
+        $imagePath = 'uploads/' . $image;
 
         echo '<div class="col-md-9">';
         echo '<h2 class="text-center p-2">' . $row['title'] . '</h2>';
